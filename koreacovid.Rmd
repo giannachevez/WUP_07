@@ -58,8 +58,13 @@ From the data, we can see that the majority of the living population were female
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+The analysis indicates a statistically significant association between sex and survival status. Females appear to have a higher likelihood of being alive compared to males, as indicated by the odds ratio of 2.3. This suggests that females are approximately 2.3 times more likely to survive than males. The results from Pearson's Chi-Squared Test, with a chi-squared statistic of 10 and a p-value of 0.0012, confirm that the observed differences are unlikely due to chance. Similarly, Fisher’s Exact Test yielded a p-value of 0.0009, supporting the finding that sex significantly influences survival outcomes in this dataset.
 
 ## Conclusions
 
