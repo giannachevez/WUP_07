@@ -48,6 +48,13 @@ Of the population that was alive, approximately 55% were female and 45% were mal
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+From the data, we can see that the majority of the living population were females, with a ratio of 56:44. In contrast, among the deceased, the majority were males, with a ratio of 64:36. Specifically, 3% of the male population was dead, while only 1.4% of the female population was deceased. This indicates that the male mortality rate was more than double that of females, highlighting a significant gender disparity in mortality rates.
 
 ## Inferential results 
 
