@@ -34,10 +34,13 @@ state of a patient must be died or alive - we adjust that as well
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
 
+```
 
-  
-
+Of the population that was alive, approximately 55% were female and 45% were male. In contrast, of those who died, 65% were male and 35% were female. This indicates a disproportionate number of male deaths compared to female deaths. Specifically, the ratio of male deaths to female deaths is approximately 65:35, meaning the number of males who died was nearly double the number of females who died, demonstrating a statistically significant difference in mortality rates between genders.
 
 
 
